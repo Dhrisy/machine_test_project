@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:machine_test_project/controller/navbar_controller.dart';
@@ -13,19 +14,19 @@ class BottomNavigationBarWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
-      
+      selectedItemColor: Colors.orange[300],
+      unselectedItemColor: Colors.black,
         currentIndex: controller.current_index,
         onTap: controller.changeIndex,
         
-        items:  [
-          const BottomNavigationBarItem(icon: Icon(Icons.search), label: 'さがす'),
-          BottomNavigationBarItem(icon: SvgPicture.asset(
-            'assets/images/Vector.svg', 
-            width: 24, 
-            height: 24,
-            
-          ), label: 'search'),
-          //  BottomNavigationBarItem(icon: Icon(Icons.search), label: 'search')
-        ]);
+        items: const [
+           BottomNavigationBarItem(
+            icon: Icon(CupertinoIcons.search,
+            size: 30,), label: 'さがす'),
+          BottomNavigationBarItem(icon: Icon(Icons.work_outline_outlined), label: 'search'),
+           BottomNavigationBarItem(icon: Icon(Icons.search), label: 'search'),
+           BottomNavigationBarItem(icon: Icon(Icons.search), label: 'search'),
+        ],
+        elevation: 0,);
   }
 }
