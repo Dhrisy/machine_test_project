@@ -26,11 +26,11 @@ class BottomNavigationBarWidget extends StatelessWidget {
             icon: Icon(CupertinoIcons.search,
             size: 30,), label: 'さがす'),
           BottomNavigationBarItem(icon: Icon(Icons.work_outline_outlined,
-           size: 30,), label: 'search'),
+           size: 30,), label: 'お仕事'),
            BottomNavigationBarItem(icon: Icon(Icons.chat,
-            size: 30,), label: 'search'),
+            size: 30,), label: 'チャット'),
            BottomNavigationBarItem(icon: Icon(Icons.person,
-            size: 30,), label: 'search'),
+            size: 30,), label: 'マイページ'),
         ],
         elevation: 0,);
   }
