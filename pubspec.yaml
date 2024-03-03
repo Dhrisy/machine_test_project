@@ -31,6 +31,7 @@ dependencies:
   get: ^4.6.6
   flutter_screenutil: ^5.9.0
   flutter_svg: ^2.0.10+1
+  cached_network_image: ^3.3.1
   flutter:
     sdk: flutter
 
@@ -62,8 +63,11 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-assets:
-  - assets/images/
+  assets:
+    - assets/picture.png
+    - assets/map.png
+    - assets/notification.svg
+    - assets/images/
   
   # - assets/images/Vector.png
   #   - images/a_dot_ham.jpeg

@@ -29,16 +29,17 @@ class ScreenMainPage extends StatelessWidget {
                ChatScreen(),
                ScreenProfile(),
 
-              // controller.current_index == 2? const ScreenStamp() : const SizedBox.shrink()
+        
             ],
           ),
           floatingActionButton: FloatingActionButton(
+            backgroundColor: Colors.orange[300],
             onPressed: (){
-            print(AppPageRoute.stampScreen);
+           
             Get.toNamed(AppPageRoute.stampScreen);
             
           }, 
-          child: Icon(Icons.add),
+          child: Image.asset("assets/images/scan-line.png"),
           shape: const CircleBorder(eccentricity: 1),
           
           ),
@@ -46,7 +47,7 @@ class ScreenMainPage extends StatelessWidget {
           
           bottomNavigationBar: 
            Container(
-            height: 90,
+            height: 70,
             child: BottomNavigationBarWidget(controller: controller,))
          
           

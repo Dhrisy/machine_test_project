@@ -6,23 +6,11 @@ const ScreenProfile({ Key? key }) : super(key: key);
 
   @override
   Widget build(BuildContext context){
-    return Column(
-      children: [
-        Container(
-          height: 100,
-          width: 300,
-          margin: EdgeInsets.only(top: 50),
-          color: Colors.red,
-          
-        ),
-         Container(
-          height: 100,
-          width: 300,
-          margin: EdgeInsets.only(top: 50),
-          color: Colors.green,
-         
-        ),
-      ],
-    );
+    return const Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisSize: MainAxisSize.max,
+        children: [Text('Screen Account')],
+      );
   }
 }

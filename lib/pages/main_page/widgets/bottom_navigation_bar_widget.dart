@@ -14,6 +14,8 @@ class BottomNavigationBarWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
+      
+      useLegacyColorScheme: false,
       selectedItemColor: Colors.orange[300],
       unselectedItemColor: Colors.black,
         currentIndex: controller.current_index,
@@ -23,9 +25,12 @@ class BottomNavigationBarWidget extends StatelessWidget {
            BottomNavigationBarItem(
             icon: Icon(CupertinoIcons.search,
             size: 30,), label: 'さがす'),
-          BottomNavigationBarItem(icon: Icon(Icons.work_outline_outlined), label: 'search'),
-           BottomNavigationBarItem(icon: Icon(Icons.search), label: 'search'),
-           BottomNavigationBarItem(icon: Icon(Icons.search), label: 'search'),
+          BottomNavigationBarItem(icon: Icon(Icons.work_outline_outlined,
+           size: 30,), label: 'search'),
+           BottomNavigationBarItem(icon: Icon(Icons.chat,
+            size: 30,), label: 'search'),
+           BottomNavigationBarItem(icon: Icon(Icons.person,
+            size: 30,), label: 'search'),
         ],
         elevation: 0,);
   }
